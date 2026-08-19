@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ESP32 Remote Controller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>ONLINE PANNEL CONTROL </h1>
+
+    <div class="panel">
+
+        <!-- dig1..dig6 -> six 7-segment digits, built by script.js -->
+        <div class="seg-row" id="segRow"></div>
+
+        <!-- dig7 -> seven status LEDs, built by script.js -->
+        <div class="led-grid" id="ledGrid"></div>
+
+    </div>
+
+    <div class="card">
+        <!-- <span>MENU / BACK</span> -->
+        <button class="push-btn" id="menuBtn">MENU / BACK</button>
+    </div>
+    
+    <div class="card">
+        <!-- <span>ENTER / SET</span> -->
+        <button class="push-btn" id="enterBtn">ENTER / SET</button>
+    </div>
+
+    <div class="card">
+        <!-- <span>DOWN</span> -->
+        <button class="push-btn" id="downBtn">DOWN</button>
+    </div>
+
+    <div class="card">
+        <!-- <span>UP</span> -->
+        <button class="push-btn" id="upBtn">UP</button>
+    </div>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+
+</html>

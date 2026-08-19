@@ -1,0 +1,215 @@
+body{
+
+    margin:0;
+    background:#1f1f1f;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.container{
+
+    width:420px;
+    margin:auto;
+    margin-top:50px;
+
+}
+
+h1{
+
+    text-align:center;
+    margin-bottom:40px;
+
+}
+
+.card{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#333;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.3);
+
+}
+
+.push-btn{
+
+    width:400px;
+    height:70px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#888;
+    color:white;
+
+    font-family:inherit;
+    font-weight:bold;
+    font-size:14px;
+    letter-spacing:.5px;
+
+    cursor:pointer;
+
+    box-shadow:0 4px 8px rgba(0,0,0,.4);
+
+    transition:background .15s, transform .1s, box-shadow .1s;
+
+    -webkit-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color:transparent;
+    touch-action:none;
+
+}
+
+.push-btn:hover{
+
+    background:#999;
+
+}
+
+.push-btn.pressed{
+
+    background:#4CAF50;
+    transform:translateY(2px);
+    box-shadow:0 1px 3px rgba(0,0,0,.5) inset;
+
+}
+
+/* ---------------- Display panel ---------------- */
+
+.panel{
+
+    background:#333;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.3);
+
+}
+
+/* --- 7-segment digits (dig1..dig6) --- */
+
+.seg-row{
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    gap:6px;
+
+    background:#141414;
+
+    padding:16px 12px;
+
+    border-radius:8px;
+
+    box-shadow:inset 0 2px 8px rgba(0,0,0,.6);
+
+}
+
+.seg-digit{
+
+    flex:1 1 0;
+    max-width:52px;
+
+    width:100%;
+    height:auto;
+
+}
+
+/* Split the six digits into two groups of three */
+.seg-digit:nth-child(3){
+
+    margin-right:16px;
+
+}
+
+.seg{
+
+    fill:#3a1010;
+
+    transition:fill .06s linear, filter .06s linear;
+
+}
+
+.seg.on{
+
+    fill:#ff2f2f;
+
+    filter:drop-shadow(0 0 4px rgba(255,60,60,.85));
+
+}
+
+/* --- Status LEDs (dig7) --- */
+
+.led-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+.led-item{
+
+    display:flex;
+    align-items:center;
+    gap:9px;
+
+}
+
+.led-dot{
+
+    flex:0 0 auto;
+
+    width:14px;
+    height:14px;
+
+    border-radius:50%;
+
+    background:#242424;
+    border:1px solid #0a0a0a;
+
+    box-shadow:inset 0 1px 2px rgba(0,0,0,.8);
+
+    transition:background .08s linear, box-shadow .08s linear;
+
+}
+
+.led-item.on .led-dot{
+
+    background:var(--led-color);
+
+    box-shadow:0 0 9px var(--led-color);
+
+}
+
+.led-label{
+
+    font-size:12px;
+    letter-spacing:.3px;
+
+    color:#999;
+
+    transition:color .08s linear;
+
+}
+
+.led-item.on .led-label{
+
+    color:#fff;
+
+}
