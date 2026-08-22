@@ -8,15 +8,13 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 
 const firebaseConfig = {
-
-    apiKey: "AIzaSyCygbMNdF5eQBlwVHr3OnfzvzFA2jdj0Mo",
-    authDomain: "buttonproject-25bf6.firebaseapp.com",
-    databaseURL: "https://buttonproject-25bf6-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "buttonproject-25bf6",
-    storageBucket: "buttonproject-25bf6.firebasestorage.app",
-    messagingSenderId: "1024017027019",
-    appId: "1:1024017027019:web:2c9c18ba818fcf5dc3b04e"
-
+  apiKey: "AIzaSyCa67Iw7eJVu6T7irC1FDcTOjUxFSBSQLQ",
+  authDomain: "buttonproject-94329.firebaseapp.com",
+  databaseURL: "https://buttonproject-94329-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "buttonproject-94329",
+  storageBucket: "buttonproject-94329.firebasestorage.app",
+  messagingSenderId: "609294851204",
+  appId: "1:609294851204:web:4ed21c18175a1eec5cf6d1"
 };
 
 const app = initializeApp(firebaseConfig);
